@@ -13,6 +13,27 @@
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
     <style>
+        .with-image-bg,
+        .with-video-bg {
+            position: relative;
+            background-size: cover;
+            margin-bottom: 2em;
+
+            /* Center everything inside */
+            min-height: 70svh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            /* White text with a shadow */
+            color: white;
+            text-shadow: 0px 0px 30px black,
+                0px 0px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .with-image-bg {
+            background-image: url('squidgame.jpg');
+        }
         body {
             margin: 0;
             font-size: 20px;
@@ -111,11 +132,15 @@
 </head>
 
 <body>
-    <div class="content">
-        <div class="header">
+    <div class="header with-image-bg">
+        <div class="content">
             <h1>The Global Reach of K-dramas</h1>
             <p class="subhead">Who are the biggest consumers of Korean TV and what have they been watching?</p>
         </div>
+    </div>
+
+
+    <div class="content">
         <div class="byline">
             <p>By Jiwon Kim</p>
         </div>
@@ -157,18 +182,14 @@
             contestants compete in extreme physical challenges to test their strength, endurance, and resilience. Interestingly, all the K-dramas in the list tend 
             towards the gritty, dark, and violent—the complete opposite of the female gaze driven cheesy romances that’s steotypically associated with K-dramas. </p>
 
-    <div class="full-width">
-        <figure>
-            <img
-                src="DevTools screenshot.png">
-            <figcaption>Smash hit Netflix original Squid Game is a blend of survival thriller and social commentary.</figcaption>
-        </figure>
-    </div>
-
     <div class="content">
         <p><i>Hallyu</i> shows no signs of slowing down. As K-Dramas continue to break barriers and reach new audiences, their global influence is set to grow even further 
             and cement Korean pop culture as a significant force in global entertainment.</p>
     </div>
+    <div class="footer">
+        <div class="content">
+            <p>You can find the code for this project <a href="https://github.com/jwokime/kdramas/">here</a>.</p>
+        </div>
     </div>
 </body>
 
